@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI CODING PROJECT</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Conversion </h1>
+        <h4>Attention!</h4>
+        <p>Masukkan derajat celcius(&#8728;C) Ke kotak input (Celcius(&#8728;C)) untuk mengonversi celcius ke fahrenheit.<br><br>
+          Masukkan derajat fahrenheit(&#8728;F)ke kotak input (Fahrenheit(&#8728;F)) Jika ingin mengonversi fahrenheit ke celcius. <br><br> Klik tombol konversi untuk menjalankan Pengonversian.</p>
+        <div class="conversion">
+            <label for="celcius">Celcius(&#8728;C):</label><br>
+            <input type="number" required placeholder="Masukkan suhu &#8728;C" id="celcius"><br>
+            <p class="errorName" id="celError">input harus diisi dengan number!</p>
+        </div>
+
+
+        <div class="fahrenheit">
+            <label for="fahrenheit">Fahrenheit(&#8728;F):</label><br>
+            <input id="fahrenheit" required placeholder="Masukkan Suhu &#8728;F " type="number">
+            <p class="errorName" id="fhrError">input harus diisi dengan number</p>
+        </div>
+
+        <div class="Rumus">
+            <label for="rumus">Cara Kalkulasi:</label><br>
+            <input type="text" readonly id="rumus">
+            <p class="errorName" id="errorText"></p>
+        </div>
+        <div class="button">
+            <button onclick="onConv()">Konversi</button>
+            <button onclick="onRst()">Reset</button>
+            <button onclick="onVers()">Reverse</button>
+        </div>
+        <p>suhu <span class="s">S</span> dalam derajat Fahrenheit(&#8728;F) sama dengan suhu <span class="s">S</span>
+            dalam derajat Celcius(&#8728;C) kali 9/5 tambah 32.</p>
+
+        <div class="celcius">
+            <h4>Rumus konversi celcius ke fahrenheit</h4>
+            <p><span class="s">S</span>(&#8728;F)=(<span class="s">S</span>(&#8728;C)x 9/5) + 32</p>
+        </div>
+        <div class="fahrenheit">
+            <h4>Rumus konversi Fahrenheit ke Celcius</h4>
+            <p><span class="s">S</span>(&#8728;C) = (<span class="s">S</span>(&#8728;F) - 32) x 5/9
+                </p>
+        </div>
+
+    </div>
+    <script src="JS/main.js">
+    </script>
+</body>
+
+</html>
